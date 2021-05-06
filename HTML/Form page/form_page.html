@@ -1,0 +1,88 @@
+
+	
+	<!DOCTYPE html >
+<head>
+	<title>form page</title>
+	<script src="validfunction.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body >
+    <h2 id=container1>  Please fill the present form , and don't be worry about personal data we will make all the data public when you will <font color="red">click the submit button </font> ! :) </h2>
+		<div>
+			<table>
+				<tbody>
+					<tr>
+						<td><label>FirstName:</label></td>
+						<td><input type="text" id="FirstName"/></td>
+					</tr>
+					<tr>
+						<td><label>LastName: </label></td>
+						<td><input type="text" id="LastName"/></td>
+					</tr>
+					<tr>
+						<td><label>Email: </label></td>
+						<td><input type="email" id="Email"/></td>
+					</tr>
+					<tr>
+						<td><label>UserName: </label></td>
+						<td><input type="text" id="UserName"/></td>
+					</tr>
+					<tr>
+						<td><label>Password: </label></td>
+						<td><input type="password" id="Password"/></td>
+					</tr>
+					<tr>
+						<td><label>Confirm Password: </label></td>
+						<td><input type="password" id="CPassword"/></td>
+					</tr>
+				</tbody>
+			</table>
+			<br/><br/>
+			<h1> Some data about your orientation </h1><br/>
+				<label> M </label>
+				<input type="radio" name="gender" value="m" checked />
+				<br/>
+				<label> F </label>
+				<input type="radio" name="gender" value="f"/>
+				<br/><br/><br/>
+			<h3> Please send us your resume in PDF format </h3><br/>	
+			
+				<label> INSERT FILE </label>
+					<input type="file" id="file" />
+						<br/><br/>
+						
+				<label> About yourself a short description </label>
+				<input type="text" id="AboutYou" />
+				   <br/><br/>			
+				<label id=container2> Subscribe to newsletter </label>
+				<input type="checkbox" id="subscribe" value="R"/>
+				<br/><br/>
+				<br/>
+		<br/>
+		<label> Birthday </label>
+		<select>
+			<option value="1"> 1</option>
+			<option value="2"> 2</option>
+			<option value="3"> 3</option>
+			<option value="3"> 4</option>
+		</select>
+		
+		<select>
+			<option value="1"> Ian</option>
+			<option value="2"> feb</option>
+			<option value="3"> Mar</option>
+			<option value="3"> Apr</option>
+		</select>
+		<select>
+			<option value="1"> 1800</option>
+			<option value="2"> 1985</option>
+			<option value="3"> 2000</option>
+			<option value="3"> 2018</option>
+		</select>				
+		<br/><br/>		
+			<!----><button id="submitbt" onclick="validateForm()"><b>Submit</b></button>
+		</div>
+		
+	<div id="errors" style="color:red;"></div>
+</body>
+</html>
