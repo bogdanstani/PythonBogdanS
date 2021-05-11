@@ -70,7 +70,7 @@ if __name__ == '__main__':
     # print(sell_any_article_by_position(list_of_elements, 0))
 
     list_of_elements = add_article(list_of_elements, get_random_type_article(), get_random_size_article())
-    print(list_of_elements)
+    print(f'final list of elements after add', list_of_elements)
 
 
 
